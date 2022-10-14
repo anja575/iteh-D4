@@ -42,13 +42,10 @@
                 <th scope="col">Predmet</th>
                 <th scope="col">Katedra</th>    
                 <th scope="col">Sala</th>
-                <th scope="col">Datum</th>
+                <th scope="col">Datum kolokvijuma</th>
             </tr>
             </thead>
             <tbody>
-            <?php
-            while ($red = $result->fetch_array()) {
-                ?>
                 <tr>
                     <td><?php echo $red["predmet"] ?></td>
                     <td><?php echo $red["katedra"] ?></td>
@@ -62,9 +59,6 @@
                     </td>
 
                 </tr>
-                <?php
-            }
-            } ?>
             </tbody>
         </table>
         <div class="row" >
